@@ -44,7 +44,7 @@ header nav a {
   color: #FFFFFF;
   padding: 35px;
 }
-header nav a:hover {
+header nav a:hover, header nav a.active {
   background: #6d597a;
 }
 
@@ -200,6 +200,73 @@ main section img {
 
 #background {
   background: #355070;
+}
+
+.services {
+  background: #fafafa;
+  padding: 40px 10%;
+}
+.services,
+.services * {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 900px) {
+  .services {
+    padding: 40px 10px;
+  }
+}
+.services h1, .services__subtitle {
+  text-align: center;
+}
+.services__subtitle {
+  font-size: 20px;
+  line-height: 2em;
+  margin-top: 30px;
+}
+.services__catalog {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+.services .service__info {
+  width: 30%;
+  background: white;
+  filter: drop-shadow(8px 8px 10px #808080);
+  border-radius: 10px;
+  padding: 30px;
+  transition: 0.3s;
+}
+@media screen and (max-width: 900px) {
+  .services .service__info {
+    margin-top: 20px;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .services .service__info {
+    width: 90%;
+  }
+}
+.services .service__info--rivers {
+  transform: rotate(3deg);
+}
+.services .service__info--rapids {
+  transform: rotate(-3deg);
+}
+.services .service__info h2 {
+  text-align: center;
+  margin-top: 15px;
+}
+.services .service__info p {
+  text-align: justify;
+  margin-bottom: 0;
+}
+.services .service__img {
+  display: block;
+  width: 100%;
+  border-radius: inherit;
 }
 
 footer {
