@@ -182,7 +182,8 @@ main section img {
 }
 
 .book,
-.join {
+.join,
+.btn {
   border-radius: 5px;
   font-size: 18px;
   background: #6d597a;
@@ -194,7 +195,8 @@ main section img {
   transition: 0.3s;
 }
 .book:hover,
-.join:hover {
+.join:hover,
+.btn:hover {
   background: #b56576;
 }
 
@@ -267,6 +269,75 @@ main section img {
   display: block;
   width: 100%;
   border-radius: inherit;
+}
+
+.contact {
+  background: #fafafa;
+  padding: 40px 10%;
+}
+.contact,
+.contact * {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 900px) {
+  .contact {
+    padding: 40px 10px;
+  }
+}
+.contact h1, .contact__subtitle {
+  text-align: center;
+}
+.contact__subtitle {
+  font-size: 20px;
+  line-height: 2em;
+  margin-top: 30px;
+}
+.contact #feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+  /* make this element invisible until we are ready for it */
+  display: none;
+}
+.contact .moveDown {
+  margin-top: 3em;
+}
+.contact .form {
+  padding: 20px 0;
+}
+.contact .form input,
+.contact .form textarea {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  font-family: inherit;
+  border-radius: 10px;
+  border: 2px solid #355070;
+  outline: none;
+}
+.contact .form input:focus,
+.contact .form textarea:focus {
+  border-color: #b56576;
+}
+.contact .form textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+}
+.contact .form .btn {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  font-weight: bold;
+  border: 0;
+  cursor: pointer;
 }
 
 footer {
