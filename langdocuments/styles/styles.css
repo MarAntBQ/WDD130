@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  color: #1C3A56;
+}
+
+header {
+  background: #00A968;
+  padding: 0 10px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header__wrapper {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+@media (max-width: 1024px) {
+  header .header__wrapper {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 768px) {
+  header .header__wrapper {
+    padding: 0 25px;
+  }
+}
+@media (max-width: 550px) {
+  header .header__wrapper {
+    padding: 0 20px;
+  }
+}
+header .header__link {
+  display: block;
+  max-width: 58px;
+  background: white;
+}
+header .header__link-img {
+  display: block;
+  width: 100%;
+}
+header ul {
+  display: flex;
+  list-style: none;
+}
+header ul li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #1C3A56;
+  transition: 0.3s;
+}
+header ul li a:hover, header ul li a.active {
+  background: #1C3A56;
+  color: white;
+}
+
+.wrapper {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 25px;
+  }
+}
+@media (max-width: 550px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+
+.home__banner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/home/banner.jpg);
+  min-height: calc(100vh - 59px);
+  text-align: center;
+}
+.home__banner-title, .home__banner-subtitle {
+  width: 100%;
+}
+.home__banner-title {
+  font-size: 100px;
+  margin-bottom: 10px;
+  color: inherit;
+}
+@media (max-width: 1024px) {
+  .home__banner-title {
+    font-size: 75px;
+  }
+}
+@media (max-width: 768px) {
+  .home__banner-title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 550px) {
+  .home__banner-title {
+    font-size: 40px;
+  }
+}
+.home__banner-subtitle {
+  font-size: 20px;
+  line-height: 2em;
+}
+@media (max-width: 1024px) {
+  .home__banner-subtitle {
+    font-size: 19px;
+  }
+}
+@media (max-width: 768px) {
+  .home__banner-subtitle {
+    font-size: 18px;
+  }
+}
+@media (max-width: 550px) {
+  .home__banner-subtitle {
+    font-size: 17px;
+  }
+}
+.home__reasons {
+  padding: 40px 0;
+  background: #fafafa;
+}
+.home__reasons-title {
+  margin-bottom: 30px;
+}
+.home__reasons-subtitle {
+  text-align: center;
+  line-height: 2em;
+  font-size: 18px;
+}
+.home__reasons-container {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.home__reasons-box {
+  background: white;
+  padding: 20px;
+  width: 30%;
+  border-radius: 10px;
+  transition: 0.3s;
+  border: 1px solid #808080;
+}
+.home__reasons-box:hover {
+  filter: drop-shadow(8px 8px 10px #808080);
+}
+@media (max-width: 768px) {
+  .home__reasons-box {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .home__reasons-box {
+    width: 90%;
+  }
+}
+.home__reasons-box img {
+  display: block;
+  width: 100%;
+  border-radius: inherit;
+}
+.home__reasons-box h2 {
+  margin: 10px 0;
+  color: #FF6600;
+}
+.home__reasons-box p {
+  text-align: justify;
+  line-height: 1.5em;
+}
+.home__invitation {
+  background: #1C3A56;
+  color: white;
+  padding: 40px 0;
+}
+.home__invitation h1 {
+  color: inherit;
+  margin-bottom: 30px;
+}
+.home__invitation p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 2em;
+  margin-bottom: 30px;
+}
+@media (max-width: 1024px) {
+  .home__invitation p {
+    font-size: 19px;
+  }
+}
+@media (max-width: 768px) {
+  .home__invitation p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 550px) {
+  .home__invitation p {
+    font-size: 17px;
+  }
+}
+
+footer {
+  padding: 30px 0;
+  color: white;
+  background: #FF6600;
+}
+footer .footer__wrapper {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+@media (max-width: 1024px) {
+  footer .footer__wrapper {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer__wrapper {
+    padding: 0 25px;
+  }
+}
+@media (max-width: 550px) {
+  footer .footer__wrapper {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer__copyright, footer .footer__social {
+    width: 100%;
+  }
+}
+footer .footer__copyright {
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  footer .footer__copyright {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+footer .footer__social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer .footer__social a {
+  text-decoration: none;
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  margin: 5px;
+  height: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  width: 40px;
+  min-width: 40px;
+  max-width: 40px;
+  background: #1C3A56;
+  color: white;
+  transition: 0.3s;
+}
+footer .footer__social a:hover {
+  background: white;
+  color: #1C3A56;
+}
+
+.btn {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  background: #1C3A56;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px;
+  transition: 0.3s;
+  filter: drop-shadow(8px 8px 10px #808080);
+  color: white;
+  border-radius: 10px;
+}
+.btn:hover {
+  background: #00A968;
+}
+.btn--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn--negative {
+  background: white;
+  color: #1C3A56;
+  filter: unset;
+}
+.btn--negative:hover {
+  background: #FF6600;
+  color: #1C3A56;
+}
