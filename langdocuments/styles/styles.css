@@ -100,6 +100,9 @@ header ul li a:hover, header ul li a.active {
   }
 }
 
+.home {
+  /* Style the tab content */
+}
 .home__banner {
   display: flex;
   align-items: center;
@@ -208,7 +211,44 @@ header ul li a:hover, header ul li a.active {
   text-align: justify;
   line-height: 1.5em;
 }
+.home__team {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.home__team-info {
+  padding: 40px 0;
+}
+.home__team-title {
+  margin-bottom: 30px;
+}
+.home__team button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.home__team button:hover {
+  background-color: #ddd;
+}
+.home__team button.active {
+  background-color: #ccc;
+}
+.home .tabcontent {
+  display: none;
+  padding: 30px 20px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.home .tabcontent h2 {
+  margin-bottom: 30px;
+}
 .home__invitation {
+  margin-top: 40px;
   background: #1C3A56;
   color: white;
   padding: 40px 0;

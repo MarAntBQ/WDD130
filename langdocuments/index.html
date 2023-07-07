@@ -52,6 +52,41 @@
         <a href="services.html" class="btn btn--center">More ...</a>
       </div>
     </div>
+    <div class="home__team-info">
+      <div class="wrapper">
+        <h1 class="home__team-title">Meet our Team</h1>
+        <div class="home__team">
+          <button class="tablinks active" onclick="openCity(event, 'MarcoAntonio')">CEO</button>
+          <button class="tablinks" onclick="openCity(event, 'AI')">AI</button>
+        </div>
+        
+        <div id="MarcoAntonio" class="tabcontent" style="display: block;">
+          <h2>Marco Antonio</h2>
+          <p>Full Stack Web Developer with 6+ years of experience delivering impactful content through tutorials. Skilled in programming, e-commerce, and web hosting. Strong technical abilities, video editing expertise, and team collaboration make for a valuable asset.</p>
+        </div>
+        <div id="AI" class="tabcontent">
+          <h2>Ai Technology</h2>
+          <p>Discover the limitless potential of LangDocuments. With our revolutionary translation services, we empower individuals and businesses to break language barriers and unlock new opportunities. Harness the power of our cutting-edge technology and expert linguists to communicate seamlessly across borders. Experience the world without boundaries with LangDocuments by your side..</p> 
+        </div>
+      </div>
+    </div>
+    
+    
+    <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
     <div class="home__invitation">
       <div class="wrapper">
         <h1>Get in Touch</h1>
